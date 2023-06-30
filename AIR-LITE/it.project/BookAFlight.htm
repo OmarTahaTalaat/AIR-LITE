@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="description" content="booking"/>
+<link href="../pic/globe.png" rel="icon" type="image/x-icon"/>
+
+<script src="https://kit.fontawesome.com/dadc90c450.js" crossorigin="anonymous"></script>
+<title> AIRELITE </title>
+<script>
+function myFunction(){
+document.body.classList.toggle("dark-mode");
+}
+function openWin() {
+  window.location.replace("BookAFlight2.htm");
+}
+function check() {
+ var m,n; 
+ m = document.getElementById("s1").value;
+ n = document.getElementById("s2").value;
+if(m==n && m!="Select country" && n!="Select country"){
+  document.getElementById("err1").innerHTML="	    *you should change one";
+  document.getElementById("err2").innerHTML="         *you should change one";
+}
+else if(m=="Select country" && n=="Select country"){
+  document.getElementById("err1").innerHTML="	    *you should select country";
+  document.getElementById("err2").innerHTML="         *you should select country";
+}else if(m=="Select country"){
+  document.getElementById("err1").innerHTML="	     *you should select country";
+  document.getElementById("err2").innerHTML="";
+}
+else if(n=="Select country"){
+  document.getElementById("err1").innerHTML="";
+  document.getElementById("err2").innerHTML="         *you should select country";
+}
+else{
+  document.getElementById("err1").innerHTML="";
+  document.getElementById("err2").innerHTML="";
+}
+}
+</script>
+</head>
+<body>
+<style type="text/css">
+@font-face {
+	font-family: feather;
+	src: url('../font/feather.otf');
+}
+@font-face {
+	font-family: neon;
+	src: url('../font/neon.otf');
+}
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+.he {
+	color: #fffbff;
+	font-family: neon;
+	font-size: 3rem;
+	text-shadow: 10px 10px 15px #000000;
+	display: inline-block;
+	padding: 1rem;
+}
+h3 {
+	color: #fffbff;
+	display: inline-block;
+	padding: 0 2rem;
+	font-size: 1.1rem;
+	font-family: Helvetica, sans-serif;
+	font-weight: lighter;
+	transition: all 0.5s;
+	cursor: pointer;
+}
+a {
+	text-decoration: none;
+	color: inherit;
+	cursor: pointer;
+	transition: 0.5s;
+}
+h3 a:after {
+	content: '\00bb';
+	position: relative;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+}
+h3:hover a {
+	padding-right: 25px;
+}
+h3:hover a:after {
+	opacity: 1;
+	right: 0;
+}
+
+header > div > aside {
+	color: #fffbff;
+	font-size: 1.5rem;
+	float: right;
+	padding-top: 1.7rem;
+	font-family: Helvetica, sans-serif;
+	font-weight: lighter;
+}
+header {
+	background: #4a235a;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: sticky;
+	top: -40px;
+	height: 110px;
+	z-index: 1;
+}
+header div {
+	width: 80%;
+	height: 70px;
+	position: sticky;
+	top: 0;
+}
+
+footer {
+	background: #4a235a;
+	color: #fff;
+	font-family: Helvetica, sans-serif;
+	font-weight: lighter;
+}
+footer div a {
+	display: block;
+	padding: 1rem 3rem;
+	font-family: Helvetica, sans-serif;
+	font-weight: lighter;
+	font-size: 1.3rem;
+}
+footer div span a {
+	display: inline-block;
+}
+footer div {
+	display: flex;
+}
+.dark-mode header {
+	background-color: rgb(204, 204, 204);
+}
+.dark-mode a {
+	color: black;
+}
+
+.dark-mode footer {
+	background-color: rgb(204, 204, 204);
+}
+.dark-mode p.copyRight {
+	background-color: black;
+	color: white;
+}
+.dark-mode p span.sp {
+	color: white;
+}
+body{
+background:#ebd0f5;
+ }
+.dark-mode button{
+background:white;
+color:black;
+border:2px solid black;
+}
+.dark-mode button:hover{
+background:black;
+border:2px solid white;
+color:white;
+}
+.dark-mode{
+background:black;
+}
+.dark-mode div.a{
+background:black;
+}
+.dark-mode div.b{
+background:black;
+}
+.dark-mode div.c{
+background:black;
+}
+.dark-mode div.d{
+background:black;
+}
+.dark-mode div.e{
+background:black;
+}
+.dark-mode input{
+background:white;
+color:black;
+}
+.dark-mode select{
+color:black;
+background:white;
+}
+.x{
+color:white;
+background-image:url("pics//bookaflight.jpg");
+background-size:100%;
+background-position:center;
+font-size:40px;
+width:100%;
+border-width:2px;
+border-color:white;
+border-style:solid;
+border-radius:15px;
+}
+select{
+color:#4A235A;
+font-size:15px;
+padding: 10px 15px;
+border: 1px; 
+border-radius: 6px;
+background:#ebd0f5;
+}
+.y{
+width:80%;
+background:white;
+border-width:3px;
+border-color:white;
+border-style:solid;
+margin-left:10%;
+border-width:3px;
+border-color:white;
+border-style:solid;
+border-radius:15px;
+}
+label{
+color:white;
+font-size:20px;
+margin-left:3%;
+}
+button{
+color:#4A235A;
+background:#FFBF00;
+display:block;
+width:20%;
+font-size:25px;
+text-align:center;
+padding:10px 24px;
+border-radius:12px;
+border-color:white;
+text-align:center;
+margin-left:40%;
+}
+input{
+padding: 10px 15px;
+border: 1px; 
+border-radius: 6px;
+background:#ebd0f5;
+color:#4A235A;
+font-size:15px;
+}
+.a{
+background:#4A235A;
+border-width:3px;
+border-color:white;
+border-style:solid;
+border-radius:15px;
+}
+.b{
+background:#4A235A;
+border-width:3px;
+border-color:white;
+border-style:solid;
+border-radius:15px;
+}
+.c{
+background:#4A235A;
+border-width:3px;
+border-color:white;
+border-style:solid;
+border-radius:15px;
+
+
+}
+.d{
+background:#4A235A;
+border-width:3px;
+border-color:white;
+border-style:solid;
+color:#4A235A;
+border-radius:15px;
+}
+.e{
+background:#4A235A;
+border-width:3px;
+border-color:white;
+border-style:solid;
+border-radius:15px;
+}
+</style>
+<header class="myHeader" id="mine">
+    <div>
+        <h1 class="he"> <a href="../index.html">AIRELITE</a> </h1>
+        <h3> <a href="BookAFlight.htm">Book Flight</a></h3>
+        
+        <h3> <a href="manageyourtrip.htm">Manage Trips</a></h3>
+        <h3> <a href="../contact/contact.html">Contact Us</a></h3>
+        <aside>
+           <i class="fas fa-adjust" onclick="myFunction()"></i>
+            <a href="../login form/index.html">sign in </a>
+            <i class="fas fa-user-tie"></i>
+        </aside>
+    </div>
+</header>
+  <br>
+<div class="x">
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</div>
+<br>
+<div class="y">
+<input type="radio" style="margin-left:2%;" name="t" checked>
+<label style="margin-left:1%;color:#4A235A;">Round Trip</label>
+ <input type="radio" style="margin-left:2%;" name="t" onclick="openWin()">
+ <label style="color:#4A235A;margin-left:1%;">One Way</label>
+<br>
+<br>
+<div class="a">
+<br>	
+<label>From:</label>	     		    	
+<select id="s1">
+<option>Select country</option>				
+<option>Cairo,Egypt</option>
+<option>Berlin,Germany</option>                           
+<option>Roma,Italy</option>
+<option>paris,France</option>
+<option>Lisbon,Portugal</option>
+<option>Moscow,Russia</option>	
+<option>Madrid,Spain</option>
+<option>London,United Kingdom</option>
+<option>Ankra,Turkey</option>	
+<option>Oslo,Norway</option>
+<option>Athens,Greece</option>
+</select><pre id="err1" style="color:red"></pre>
+<br>
+<label>To:</label>
+<select id="s2">
+<option>Select country</option>				
+<option>Cairo,Egypt</option>
+<option>Berlin,Germany</option>                           
+<option>Roma,Italy</option>
+<option>paris,France</option>
+<option>Lisbon,Portugal</option>
+<option>Moscow,Russia</option>	
+<option>Madrid,Spain</option>
+<option>London,United Kingdom</option>
+<option>Ankra,Turkey</option>	
+<option>Oslo,Norway</option>
+<option>Athens,Greece</option>
+</select><pre id="err2" style="color:red"></pre>
+<br>
+</div>
+<div class="b">
+<br>
+<label>Departure Date:</label>			       				
+<input type="date" size="30" value="2021-06-05">
+<br>
+<br>
+<label>Departure Time:</label>        	  
+<select>
+<option>Any time</option>
+<option>Morning</option>
+<option>Afternoon</option>
+<option>Evening</option>
+</select>
+<br>
+<br>
+</div>
+<div class="c">
+<br>
+<label>Return Date:</label>			   
+<input type="date" size="30" value="2021-06-05">
+<br>
+<br>
+<label>Return Time:</label>       	   
+<select>
+<option>Any time</option>
+<option>Morning</option>
+<option>Afternoon</option>
+<option>Evening</option>
+</select>
+<br>
+<br>
+</div>
+<div class="d">
+<br>
+<select style="margin-left:5%">				
+<option>1 Adult(s)</option>
+<option>2 Adult(s)</option>                           
+<option>3 Adult(s)</option>
+<option>4 Adult(s)</option>
+<option>5 Adult(s)</option>
+<option>6 Adult(s)</option>	
+<option>7 Adult(s)</option>
+</select>
+<select style="margin-left:5%">					
+<option>0 Child(ren)</option>			
+<option>1 Child(ren)</option>			
+<option>2 Child(ren)</option>			
+<option>3 Child(ren)</option>
+<option>4 Child(ren)</option>
+<option>5 Child(ren)</option>
+<option>6 Child(ren)</option>
+</select>
+<select style="margin-left:5%">
+<option>0 Infant</option>
+<option>1 Infant</option>
+</select>
+<pre style="color:white">	*+12 years		*2-11 years		  *under 2 years</pre>
+<br>
+</div>
+<div class="e">
+<br>	
+<label>Class:</label>
+<select>
+<option>Best Fare</option>
+<option>Business</option>
+</select>
+<br>
+<br>
+</div>
+</div>
+<br>
+<button type="submit" onclick="check()"><b>BOOK</b></button>
+<br>
+<footer>
+        
+        
+	<div>
+		<a href="AboutUs.htm">Our Company</a>
+		<a href="../layout/index.html">Our Planes</a>
+		<a href="Policy.htm">Terms of Policies</a>
+	</div>
+	
+	<div>
+		<a href="../contact/contact.html">Contanct Us</a>
+		<span>
+			<a href="https://www.facebook.com"><i class="fab fa-facebook-square"></i> Facebook</a>
+			<a href="https://www.Twitter.com"><i class="fab fa-twitter-square"></i> Twitter</a>
+			<a href="https://www.Instagram.com"><i class="fab fa-instagram-square"></i> Instagram</a>
+			<a href="https://www.YouTube.com"><i class="fab fa-youtube-square"></i> YouTube</a>
+		</span>
+	</div>
+	<hr> 
+  
+	
+	
+  </footer>
+
+</body>	
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AIRELITE</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="../pic/globe.png" rel="icon" type="image/x-icon"/>
+  <script src="https://kit.fontawesome.com/0aa2102f78.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+
+  <header class="myHeader" id="mine">
+    <div>
+        <h1 > <a href="../index.html">AIRELITE</a> </h1>
+        <h3> <a href="../it.project/BookAFlight.htm">Book Flight</a></h3>
+        
+        <h3> <a href="../it.project/manageyourtrip.htm">Manage Trips</a></h3>
+        <h3> <a href="../contact/contact.html">Contact Us</a></h3>
+        <aside>
+           <i class="fas fa-adjust" onclick="myFunction()"></i>
+            <a href="../login form/index.html">sign in </a>
+            <i class="fas fa-user-tie"></i>
+        </aside>
+    </div>
+  </header>
+         
+
+
+
+
+
+
+
+
+<div class="m">
+    <div class="log">Sign In</div>
+  <i class="fas fa-user"></i> 
+    <label for="use" id="text">Username:</label>
+  <input type="text" id="username" autofocus placeholder="Type Your Username or email" name="name"><br>
+  <p id="user"></p>
+  <br>
+  <i class="fas fa-lock"></i>
+  <label for="pass" id="text">Password:</label>
+  <input type="password" id="passw" autofocus placeholder="Type Your Password" name="password" minlength="6"><br>
+  <p id="pass"></p>
+  <br>
+  <a href="#" id="for" class="ab">
+    Forgot password?
+  </a><br>
+  <label  id="box">
+    <input type="checkbox" checked="checked" name="remember" id="box" > Remember me
+  </label>
+  <button type="submit " class="do" onclick="validateForm()" >Login</button>
+
+  <div class="in">Have Not Account yet? <br><a href="../signup/index.html" class="ab">Create Account</a></div>
+</div>
+
+<br><br>
+
+<script>
+  function validateForm() {
+    var name=document.getElementById("username").value;  
+    var password=document.getElementById("passw").value;
+    if (name=="" && password==""){  
+      document.getElementById("user").innerHTML="*Enter Username";  
+      document.getElementById("pass").innerHTML="*Enter Password";
+    } 
+    else if(name==""){
+      document.getElementById("user").innerHTML="*Invalid Username";
+      document.getElementById("pass").innerHTML="";
+    }
+    else if(password==""){
+      document.getElementById("user").innerHTML="";
+      document.getElementById("pass").innerHTML="*Invalid Password";
+    }
+    else{
+      document.getElementById("user").innerHTML="";
+      document.getElementById("pass").innerHTML="";
+
+    }
+     }
+  function myFunction() {
+     var element = document.body;
+     element.classList.toggle("dark-mode");
+  } 
+  </script>
+
+</body>
+</html>

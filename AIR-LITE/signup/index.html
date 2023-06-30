@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AIRELITE</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="../pic/globe.png" rel="icon" type="image/x-icon"/>
+
+  <script src="https://kit.fontawesome.com/0aa2102f78.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header class="myHeader" id="mine">
+    <div>
+        <h1 class="x"> <a href="../index.html">AIRELITE</a> </h1>
+        <h3> <a href="../it.project/BookAFlight.htm">Book Flight</a></h3>
+        
+        <h3> <a href="../it.project/manageyourtrip.htm">Manage Trips</a></h3>
+        <h3> <a href="../contact/contact.html">Contact Us</a></h3>
+        <aside>
+           <i class="fas fa-adjust" onclick="myFunction()"></i>
+            <a href="../login form/index.html">sign in </a>
+            <i class="fas fa-user-tie"></i>
+        </aside>
+    </div>
+  </header>
+<div class="dp">
+  <div class="log">Create Account</div>
+  <i class="fas fa-plane-departure" id="img"></i>
+<i class="fas fa-user"></i> 
+  <label for="use" id="text">Your Name:</label><br>
+<input type="text" id="username" class="lo" autofocus placeholder="Type Your Full Name" name="name" >
+<p id="user" class="k"></p>
+<i class="fas fa-envelope"></i>
+<label for="email" id="text">Your E-mail:</label><br>
+<input type="email"  class="lo" id="email"  autofocus placeholder="Type Your E-mail" name="email" >
+<p id="Email" class="k"></p>
+<i class="fas fa-lock"></i>
+<label for="pass" id="text">Your Password:</label><br>
+<input type="password" id="passw" class="lo" autofocus placeholder="Type Your Password" name="password" >
+<p id="pass" class="k"></p>
+<i class="fas fa-lock"></i>
+<label for="pass" id="text">Repeat Your Password:</label><br>
+<input type="password" class="lo" id="rpass" autofocus placeholder="Repeat Your Password" name="password2" ><br>
+<p id="Rpass" class="k"></p>
+<label  id="box">
+  <input type="checkbox" checked="checked" name="terms" id="box" > I agree all statements in <a href="../it.project/Policy.htm" class="link"> Terms of service</a>
+</label>
+<div class="in">I am already member <a href="../login form/index.html" class="link">Sign In</a></div>
+<button type="submit " id="log" onclick="validateForm()">Register</button>
+
+</div>
+<br><br>
+
+<script>
+  function validateForm() {
+    var name=document.getElementById("username").value;  
+    var password=document.getElementById("passw").value;
+    var email=document.getElementById("email").value
+    var rpass=document.getElementById("rpass").value
+    
+    if(name==""){  
+      document.getElementById("user").innerHTML="*Enter Username";  
+    }
+    if(name!=""){  
+      document.getElementById("user").innerHTML="";  
+    }
+    if(email==""){
+      document.getElementById("Email").innerHTML="*Enter Email";
+    }
+    if(email!=""){
+      document.getElementById("Email").innerHTML="";
+    } 
+    if(password==""){
+      document.getElementById("pass").innerHTML="*Enter Password";
+    }
+    if(password!=""){
+      document.getElementById("pass").innerHTML="";
+    }
+    if(rpass==""){
+      document.getElementById("Rpass").innerHTML="*Enter Repeat  Password";
+    }
+    if(rpass!=""){
+      document.getElementById("Rpass").innerHTML="";
+    }
+    if(password!=rpass){
+      document.getElementById("Rpass").innerHTML="Password Doesnot match";
+    }
+     }
+     function myFunction() {
+     var element = document.body;
+     element.classList.toggle("dark-mode");
+  }
+  </script>
+
+
+</body>
+</html>

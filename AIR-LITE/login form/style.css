@@ -1,0 +1,237 @@
+@font-face {
+	font-family: feather;
+	src: url('../font/feather.otf');
+}
+@font-face {
+	font-family: neon;
+	src: url('../font/neon.otf');
+}
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+h1 {
+	color: #fffbff;
+	font-family: neon;
+	font-size: 3rem;
+	text-shadow: 10px 10px 15px #000000;
+	display: inline-block;
+	padding: 1rem;
+}
+h3 {
+	color: #fffbff;
+	display: inline-block;
+	padding: 0 2rem;
+	font-size: 1.1rem;
+	font-family: Helvetica, sans-serif;
+	font-weight: lighter;
+	transition: all 0.5s;
+	cursor: pointer;
+}
+a {
+	text-decoration: none;
+	color: inherit;
+	cursor: pointer;
+	transition: 0.5s;
+}
+h3 a:after {
+	content: '\00bb';
+	position: relative;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+}
+h3:hover a {
+	padding-right: 25px;
+}
+h3:hover a:after {
+	opacity: 1;
+	right: 0;
+}
+
+header > div > aside {
+	color: #fffbff;
+	font-size: 1.5rem;
+	float: right;
+	padding-top: 1.7rem;
+	font-family: Helvetica, sans-serif;
+	font-weight: lighter;
+}
+header {
+	background: #4a235a;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: sticky;
+	top: -40px;
+	height: 110px;
+	z-index: 1;
+}
+header div {
+	width: 80%;
+	height: 70px;
+	position: sticky;
+	top: 0;
+}
+
+footer {
+	background: #4a235a;
+	color: #fff;
+	font-family: Helvetica, sans-serif;
+	font-weight: lighter;
+}
+footer div a {
+	display: block;
+	padding: 1rem 3rem;
+	font-family: Helvetica, sans-serif;
+	font-weight: lighter;
+	font-size: 1.3rem;
+}
+footer div span a {
+	display: inline-block;
+}
+footer div {
+	display: flex;
+}
+
+body {
+	background-color: #ebd0f5;
+}
+.m {
+	border-radius: 10px;
+	padding: 30px;
+	background-color: rgba(130, 58, 224, 0.2);
+	width: 400px;
+	height: 700px;
+	margin: auto;
+	margin-top: 20px;
+}
+#for {
+	float: right;
+}
+#username,
+#passw {
+	font-family: Poppins-Medium;
+	font-size: 16px;
+	outline: none;
+	line-height: 1.2;
+	border-radius: 10px;
+	display: inline-block;
+	width: 95%;
+	height: 55px;
+	background: transparent;
+	padding: 0 7px 0 13px;
+	border: 1px solid #4a235a;
+	background-color: rgba(92, 91, 91, 0.3);
+}
+#text {
+	font-size: 20px;
+}
+button.do {
+	font-family: Poppins-Medium;
+	font-size: 16px;
+	margin-top: 80px;
+	line-height: 1.2;
+	color: white;
+	font: status-bar;
+	font-size: 20px;
+	display: block;
+	width: 100%;
+	height: 55px;
+	background: transparent;
+	border-radius: 40px;
+	background-color: #4a235a;
+}
+a.ab {
+	color: black;
+	font-size: 20px;
+	line-height: 2;
+	margin: 20px;
+	transition: all 0.4s;
+	-webkit-transition: all 0.4s;
+	-o-transition: all 0.4s;
+	-moz-transition: all 0.4s;
+}
+
+.log {
+	font: status-bar;
+	text-align: center;
+	font-size: 50px;
+	margin-bottom: 50px;
+}
+.in {
+	margin-top: 100px;
+	text-align: center;
+}
+#box {
+	font-size: 22px;
+	margin-top: 19px;
+}
+p#user,
+p#pass {
+	text-align: center;
+	color: red;
+}
+button:visited,
+button:link {
+	background-color: #4a235a;
+	color: white;
+}
+button:hover,
+button:active {
+	background-color: #c09ece;
+	color: rgb(20, 20, 20);
+	border: 2px solid black;
+}
+.dark-mode {
+	background-color: rgb(17, 17, 17);
+	color: rgb(204, 197, 197);
+}
+.dark-mode div.m {
+	background-color: rgba(151, 150, 150, 0.249);
+	border: 4px solid rgba(151, 150, 150, 0.249);
+}
+.dark-mode div.in {
+	color: rgb(204, 197, 197);
+}
+.dark-mode a {
+	color: rgb(204, 197, 197);
+}
+.dark-mode input#username {
+	border: 1px solid rgb(146, 143, 143);
+}
+.dark-mode input#passw {
+	border: 1px solid rgb(146, 143, 143);
+}
+.dark-mode button.do {
+	background-color: rgba(151, 150, 150, 0.249);
+	border: 1px solid rgba(151, 150, 150, 0.249);
+}
+.dark-mode p#user,
+.dark-mode p#pass {
+	color: brown;
+}
+.dark-mode button:hover {
+	background-color: rgba(233, 221, 221, 0.856);
+	border: 1px solid rgba(209, 202, 202, 0.249);
+}
+.dark-mode header {
+	background-color: rgb(204, 204, 204);
+}
+.dark-mode a {
+	color: black;
+}
+
+.dark-mode footer {
+	background-color: rgb(204, 204, 204);
+}
+.dark-mode p.copyRight {
+	background-color: black;
+	color: white;
+}
+.dark-mode p span.sp {
+	color: white;
+}

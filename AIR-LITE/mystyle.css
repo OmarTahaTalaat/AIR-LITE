@@ -1,0 +1,381 @@
+@font-face {
+	font-family: feather;
+	src: url('font/feather.otf');
+}
+@font-face {
+	font-family: neon;
+	src: url('font/neon.otf');
+}
+
+* {
+	padding: 0;
+	margin: 0;
+}
+body {
+	background-color: azure;
+}
+header {
+	background: #4a235a;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: sticky;
+	top: -40px;
+	height: 110px;
+	z-index: 1;
+}
+header div {
+	width: 80%;
+	height: 70px;
+	position: sticky;
+	top: 0;
+}
+
+.top {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.top div {
+	font-family: neon;
+	position: absolute;
+
+	justify-content: center;
+	align-items: center;
+	top: 18rem;
+	left: 8rem;
+	font-size: 8rem;
+	color: #fff;
+}
+
+.top div:hover{
+	text-shadow: 11px 11px 16px #000000;
+	display: inline-block;
+	margin-left: 0.2rem;
+	font-weight: bold; 
+}
+
+.top h5 {
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	position: absolute;
+	justify-content: center;
+	align-items: center;
+	top: 7rem;
+	left: 2rem;
+	font-size: 9rem;
+	color: #fff;
+	font-weight: lighter;
+}
+
+
+
+.b {
+	position: absolute;
+	justify-content: center;
+	align-items: center;
+	top: 48rem;
+	left: 52rem;
+	font-size: 6rem;
+	color: #fff;
+	font-weight: lighter;
+}
+.b:hover {
+	color: yellowgreen;
+	text-shadow: 5px 8px #000000;
+}
+
+
+
+
+/* for scroll bar*/
+.content {
+	padding: 16px;
+}
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+/*  */
+
+h1 {
+	color: #fffbff;
+	font-family: neon;
+	font-size: 3rem;
+	text-shadow: 10px 10px 15px #000000;
+	display: inline-block;
+	padding: 1rem;
+}
+h3 {
+	color: #fffbff;
+	display: inline-block;
+	padding: 0 2rem;
+	font-size: 1.1rem;
+	font-family: Helvetica, sans-serif;
+	font-weight: lighter;
+	transition: all 0.5s;
+	cursor: pointer;
+}
+a {
+	text-decoration: none;
+	color: inherit;
+	cursor: pointer;
+	transition: 0.5s;
+}
+h3 a:after {
+	content: '\00bb';
+	position: relative;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+}
+h3:hover a {
+	padding-right: 25px;
+}
+h3:hover a:after {
+	opacity: 1;
+	right: 0;
+}
+
+header > div > aside {
+	color: #fffbff;
+	font-size: 1.5rem;
+	float: right;
+	padding-top: 1.7rem;
+	font-family: Helvetica, sans-serif;
+	font-weight: lighter;
+}
+footer {
+	background: #4a235a;
+	color: #fff;
+	font-family: Helvetica, sans-serif;
+	font-weight: lighter;
+}
+footer div a {
+	display: block;
+	padding: 1rem 3rem;
+	font-family: Helvetica, sans-serif;
+	font-weight: lighter;
+	font-size: 1.3rem;
+}
+footer div span a {
+	display: inline-block;
+}
+footer div {
+	display: flex;
+}
+
+article {
+	border: transparent #000000;
+	border-radius: 0.4rem;
+}
+
+article:hover {
+	border: transparent;
+	box-shadow: 5px 8px 10px rgba(48, 48, 48, 0.5);
+}
+article:active {
+	box-shadow: 0px 1px #666;
+	transform: translateY(4px);
+}
+
+.copyRight {
+	background-color: #fff;
+}
+.copyRight span {
+	display: block;
+}
+.offers {
+	margin: auto;
+	width: 65%;
+	padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.london {
+	width: 88%;
+	background-color: #ffffff;
+	display: flex;
+	box-shadow: 5px 8px 10px #000000;
+	margin: 40px;
+}
+.london figure img {
+	height: 100%;
+	float: right;
+	width: 80%;
+}
+.norway {
+	width: 88%;
+	background: #ffffff;
+	display: flex;
+	box-shadow: 5px 8px 10px #000000;
+	margin: 40PX;
+}
+.norway figure img {
+	height: 100%;
+	width: 100%;
+	float: left;
+	
+}
+section article p {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 1.6rem;
+	padding: 8px;
+}
+.off {
+	font-family: monaco;
+	font-size: 2rem;
+	color: #4a235a;
+
+	line-height: 1.5;
+}
+.other {
+	margin: auto;
+	width: 65%;
+	padding: 10px;
+}
+.manageTrips {
+	width: 88%;
+	background: #ffffff;
+	display: flex;
+	box-shadow: 5px 8px 10px #000000;
+	margin: 40px;
+}
+.manageTrips figure img {
+	height: 100%;
+	float: right;
+	width: 70%;
+}
+
+.our {
+	width: 88%;
+	background: #ffffff;
+	display: flex;
+	box-shadow: 5px 8px 10px #000000;
+
+	margin: 40px;
+}
+.our figure img {
+	height: 100%;
+	width: 70%;
+	float: left;
+}
+
+.contact {
+	width: 88%;
+	background: #ffffff;
+	display: flex;
+	box-shadow: 5px 8px 10px #000000;
+	margin: 40px;
+}
+
+.contact figure img {
+	height: 100%;
+	float: right;
+	width: 70%;
+}
+.sponsors {
+	width: 88%;
+	background: #ffffff;
+	display: flex;
+	box-shadow: 5px 8px 10px #000000;
+	margin: 40px;
+}
+.sponsors figure img {
+	float: left;
+	border-radius: 0.15rem;
+	width: 100%;
+}
+
+.other article p {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: auto;
+	padding: 8px;
+	float: right;
+}
+
+/*test*/
+/*
+.fsfs {
+	background-image: url('pic/welcome1.jpg');
+	background-repeat: no-repeat;
+}
+.fsfs div {
+	font-family: neon;
+	position: absolute;
+	justify-content: center;
+	align-items: center;
+	top: 18rem;
+	left: 9rem;
+	font-size: 10rem;
+	color: #fff;
+}
+.fsfs h5 {
+	font-family: Arial, Helvetica, sans-serif;
+	position: absolute;
+	justify-content: center;
+	align-items: center;
+	top: 7rem;
+	left: 1rem;
+	font-size: 9rem;
+	font-weight: unset;
+	color: #fff;
+}
+*/
+
+
+.dark-mode {
+	background-color: black;
+	color: black;
+	margin: 0px;
+}
+.dark-mode span {
+	color: black;
+}
+.dark-mode article {
+	background-color: #c7c7c7;
+}
+.dark-mode header {
+	background-color: #cccccc;
+}
+.dark-mode a {
+	color: black;
+}
+.dark-mode footer {
+	background-color: #cccccc;
+}
+.dark-mode p.copyRight {
+	background-color: black;
+	color: white;
+}
+.dark-mode p span.sp {
+	color: white;
+}
+.dark-mode div.m5 {
+	color: black;
+}
+.dark-mode h5 {
+	color: black;
+}

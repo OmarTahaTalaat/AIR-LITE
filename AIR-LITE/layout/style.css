@@ -1,0 +1,189 @@
+@font-face {
+	font-family: feather;
+	src: url('../font/feather.otf');
+}
+@font-face {
+	font-family: neon;
+	src: url('../font/neon.otf');
+}
+
+* {
+	padding: 0;
+	margin: 0;
+}
+body {
+	background-color: #fffbfb;
+}
+header {
+	background: #4a235a;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: sticky;
+	top: -40px;
+	height: 110px;
+	z-index: 1;
+}
+header div {
+	width: 80%;
+	height: 70px;
+	position: sticky;
+	top: 0;
+}
+
+h1 {
+	color: #fffbff;
+	font-family: neon;
+	font-size: 3rem;
+	text-shadow: 10px 10px 15px #000000;
+	display: inline-block;
+	padding: 1rem;
+}
+h3 {
+	color: #fffbff;
+	display: inline-block;
+	padding: 0 2rem;
+	font-size: 1.1rem;
+	font-family: Helvetica, sans-serif;
+	font-weight: lighter;
+	transition: all 0.5s;
+	cursor: pointer;
+}
+a {
+	text-decoration: none;
+	color: inherit;
+	cursor: pointer;
+	transition: 0.5s;
+}
+h3 a:after {
+	content: '\00bb';
+	position: relative;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+}
+h3:hover a {
+	padding-right: 25px;
+}
+h3:hover a:after {
+	opacity: 1;
+	right: 0;
+}
+
+header > div > aside {
+	color: #fffbff;
+	font-size: 1.5rem;
+	float: right;
+	padding-top: 1.7rem;
+	font-family: Helvetica, sans-serif;
+	font-weight: lighter;
+}
+
+.planes {
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: center;
+	margin: 50px;
+}
+
+section {
+	display: inline-block;
+	box-sizing: border-box;
+	border-style: solid;
+	border-color: #d3d3d3;
+
+	border-radius: 1rem;
+	margin: 70PX;
+	width: 40%;
+}
+
+section:hover {
+	border-style: solid;
+	border-color: #da7bff;
+	box-shadow: antiquewhite;
+}
+
+img {
+	display: table;
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	border-radius: 0.8rem;
+	border-bottom-right-radius: 0.5rem;
+	border-bottom-left-radius: 0.5rem;
+}
+h4 {
+	font-family: JBAvenir, avenir, Arial;
+	font-size: 2rem;
+	margin: 18px;
+}
+p {
+	font-family: JBAvenir, avenir, Arial;
+	font-size: 1.5rem;
+	margin: 18px;
+	font-weight: lighter;
+}
+h2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 2rem;
+	color: #000000;
+	font-weight: lighter;
+}
+footer {
+	background: #4a235a;
+	color: #fff;
+	font-family: Helvetica, sans-serif;
+	font-weight: lighter;
+}
+footer div a {
+	display: block;
+	padding: 1rem 3rem;
+	font-family: Helvetica, sans-serif;
+	font-weight: lighter;
+	font-size: 1.3rem;
+}
+footer div span a {
+	display: inline-block;
+}
+footer div {
+	display: flex;
+}
+
+.dark-mode {
+	background-color: black;
+	color: black;
+	margin: 0px;
+}
+.dark-mode span {
+	color: black;
+}
+
+.dark-mode header {
+	background-color: rgb(204, 204, 204);
+}
+.dark-mode a {
+	color: black;
+}
+.dark-mode footer {
+	background-color: rgb(204, 204, 204);
+}
+.dark-mode p.copyRight {
+	background-color: black;
+	color: white;
+}
+.dark-mode p span.sp {
+	color: white;
+}
+.dark-mode div.m5 {
+	color: black;
+}
+.dark-mode h2 {
+	color: white;
+}
+.dark-mode H4 {
+	color: white;
+}
+.dark-mode P {
+	color: white;
+}

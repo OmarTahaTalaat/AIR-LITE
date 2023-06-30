@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title> AIRELITE </title>
+    <link href="../pic/globe.png" rel="icon" type="image/x-icon"/>
+    <script src="https://kit.fontawesome.com/0aa2102f78.js" crossorigin="anonymous"></script>
+    <script>
+    function nyFunction() {
+      alert("Your message has been submitted.");
+    }
+    </script>
+</head>
+<style>
+@font-face {
+	font-family: feather;
+	src: url('../font/feather.otf');
+}
+@font-face {
+	font-family: neon;
+	src: url('../font/neon.otf');
+}
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+h1 {
+	color: #fffbff;
+	font-family: neon;
+	font-size: 3rem;
+	text-shadow: 10px 10px 15px #000000;
+	display: inline-block;
+	padding: 1rem;
+}
+h3 {
+	color: #fffbff;
+	display: inline-block;
+	padding: 0 2rem;
+	font-size: 1.1rem;
+	font-family: Helvetica, sans-serif;
+	font-weight: lighter;
+	transition: all 0.5s;
+	cursor: pointer;
+}
+a {
+	text-decoration: none;
+	color: inherit;
+	cursor: pointer;
+	transition: 0.5s;
+}
+h3 a:after {
+	content: '\00bb';
+	position: relative;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+}
+h3:hover a {
+	padding-right: 25px;
+}
+h3:hover a:after {
+	opacity: 1;
+	right: 0;
+}
+
+header > div > aside {
+	color: #fffbff;
+	font-size: 1.5rem;
+	float: right;
+	padding-top: 1.7rem;
+	font-family: Helvetica, sans-serif;
+	font-weight: lighter;
+}
+header {
+	background: #4a235a;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: sticky;
+	top: -40px;
+	height: 110px;
+	z-index: 1;
+}
+header div {
+	width: 80%;
+	height: 70px;
+	position: sticky;
+	top: 0;
+}
+
+footer {
+	background: #4a235a;
+	color: #fff;
+	font-family: Helvetica, sans-serif;
+	font-weight: lighter;
+}
+footer div a {
+	display: block;
+	padding: 1rem 3rem;
+	font-family: Helvetica, sans-serif;
+	font-weight: lighter;
+	font-size: 1.3rem;
+}
+footer div span a {
+	display: inline-block;
+}
+footer div {
+	display: flex;
+}
+.dark-mode button:hover {
+	background-color: rgba(233, 221, 221, 0.856);
+	border: 1px solid rgba(209, 202, 202, 0.249);
+}
+.dark-mode header {
+	background-color: rgb(204, 204, 204);
+}
+.dark-mode a {
+	color: black;
+}
+
+.dark-mode footer {
+	background-color: rgb(204, 204, 204);
+}
+.dark-mode p.copyRight {
+	background-color: black;
+	color: white;
+}
+.dark-mode p span.sp {
+	color: white;
+}
+
+body {
+background-color: #ebd0f5;
+text-align:center;  
+}
+.contactUs-message{
+   font-size: 35px;
+   margin: 20px 0px 20px 0px;
+   color: #4A235A;
+   font-weight: 700;
+   font-weight: normal;
+   margin-bottom: 40px;
+}
+
+.Announce {
+   color: black;
+   margin: 0 0 30px 0;
+   font-size: 21px;
+} 
+.f-name {
+   color: #4A235A;
+   overflow: hidden;
+font-size:20px;
+}
+
+.f-name-box {
+   width: 150px;
+   border: 1px solid #4A235A;
+   border-radius: 3px;
+   height: 20px;
+   
+}
+
+.l-name {
+   color: #4A235A;
+   overflow: hidden;
+   margin-left: 18px;
+   margin-bottom: 10px;
+font-size:20px;
+}
+
+.l-name-box {
+   border: 1px solid #4A235A;
+   border-radius: 3px;
+   margin-left: 37px;
+   color: #203152;
+   overflow: hidden;
+   margin-bottom: 10px;
+   width: 150px;
+   height: 20px;
+}
+
+.email {
+   color: #4A235A;
+   overflow: hidden;
+   font-size:20px;
+}
+.email-box {
+   margin-left: 10px;
+   width: 150px;
+   border: 1px solid #4A235A;
+   border-radius: 3px;
+   height: 20px;
+}
+
+
+
+.ph-num {
+   color: #4A235A;
+   overflow: hidden;
+   margin-left: 20px;
+   margin-bottom: 10px;
+   width: 150px;
+font-size:20px;
+}
+
+.ph-num-box {
+   margin-left: 3px;
+   width: 150px;
+   border: 1px solid #4A235A;
+   border-radius: 3px;
+   height: 20px;
+}
+.subject {
+   color: #4A235A;
+   overflow: hidden;
+   font-size:20px;
+}
+.subject-box {
+   margin-left: 20px;
+   border: 1px solid #4A235A;
+   border-radius: 3px;
+   width: 350px;
+   height: 25px;
+}
+
+.reset-buttom {
+   color: #4A235A;
+   background-color: white;
+   margin-right: 30px;
+   margin-left: 100px;
+   width:10%;
+   padding:12px 24px;
+
+}
+
+.submit-buttom {
+   color: white;
+   background-color: #4A235A;
+width:15%;
+   padding:12px 24px;
+
+}
+
+.your-message{
+color:#4A235A;
+}
+
+.space {
+   margin-bottom: 50px;
+}
+.line-bar{
+   margin-top: 10%;
+   
+}
+
+.dark-mode{
+background-color: black;  
+}
+.dark-mode div.contactUs-message{
+   color: white;
+   
+}
+.dark-mode div.your-message {
+   color: white;
+} 
+.dark-mode .Announce {
+   color: white;
+} 
+.dark-mode label {
+   color: white;
+
+}
+.dark-mode input {
+   color: black;
+   background-color: white;
+}
+</style>
+<body>
+<header class="myHeader" id="mine">
+
+        <div>
+            <h1 > <a href="../index.html">AIRELITE</a> </h1>
+            <h3> <a href="../it.project/BookAFlight.htm">Book Flight</a></h3>
+            
+            <h3> <a href="../it.project/manageyourtrip.htm">Manage Trips</a></h3>
+            <h3> <a href="contact.html">Contact Us</a></h3>
+            <aside>
+
+               <i class="fas fa-adjust"  onclick="myFunction()"></i>
+                <a href="../login form/index.html">sign in </a>
+                <i class="fas fa-user-tie"></i>
+            </aside>
+        </div>
+
+    </header>
+
+    <div class="line-bar"></div>
+        <div class="main-body">
+            <div class="contact-form">
+            
+            <div class="contactUs-message">Contact Us</div>
+            
+            <p class="Announce">Fill in this form to send us an email
+            <div class="box">
+                    <form  method="POST">
+                            <label class="f-name">First Name:</label>
+                            <input class="f-name-box" type="text" required name="fname">
+                            
+                            <label class="l-name">Last Name:</label>
+                            <input class="l-name-box" type="text" required namae="lname">
+                        <br><br>
+                        <div class="email">
+                            <label class="email-id">Email-ID:</label>
+                            <input class="email-box" type="email" required name="mail">
+
+                            <label class="ph-num">Phone Number:</label>
+                            <input class="ph-num-box" type="text" name="phonenum">
+                        </div>
+                        <br>
+                        <div class="subject">
+                            <label class="subject-name">Subject:</label>
+                            <select class="subject-box" name="drop-box-subject" id="drop-box-subject">
+                                <option value="subject">Subject:</option>
+                                <option value="information-website">Information about Website.com</option>
+                                <option value="information-destination">Information about a destination</option>
+                                <option value="feedback">Feedback</option>
+                            </select>
+                            <br>
+
+                        </div>
+<br>
+<div class="your-message">
+<p style="font-size:20px;">Your Message:</p>
+<br>
+<textarea name="Your Message" cols="71" rows="4"
+class="your-message"placeholder="Type your Message here." style="border: 1px solid #4A235A;"></textarea>
+<br>
+</div>
+<br>
+<input class="reset-buttom" type="reset" value="Reset">
+<input onclick="nyFunction()" class="submit-buttom" type="submit" value="Submit">
+</form>
+</div>
+             </div>
+       </div>
+
+    <br>
+<br>
+<br><br><br><br>
+  <footer>
+        
+        
+             
+    <div>
+		<a href="../it.project/AboutUs.htm">Our Company</a>
+		<a href="../layout/index.html">Our Planes</a>
+		<a href="../it.project/Policy.htm">Terms of Policies</a>
+	</div>
+	
+	<div>
+		<a href="contact.html">Contanct Us</a>
+		<span>
+			<a href="https://www.facebook.com"><i class="fab fa-facebook-square"></i> Facebook</a>
+			<a href="https://www.Twitter.com"><i class="fab fa-twitter-square"></i> Twitter</a>
+			<a href="https://www.Instagram.com"><i class="fab fa-instagram-square"></i> Instagram</a>
+			<a href="https://www.YouTube.com"><i class="fab fa-youtube-square"></i> YouTube</a>
+		</span>
+	</div>
+    <hr> 
+
+        
+        
+  </footer>
+    <p class="copyRight"><span class="sp"> Indicates link opens an external site and may not conform to the same accessibility policies as JetBlue</span>
+        &copy;2021 Airelite Aireways
+    </p>
+    
+    <script src="../fs.js"></script>      
+</body>
+
+</html>
